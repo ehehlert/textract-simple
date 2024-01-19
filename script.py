@@ -83,11 +83,11 @@ def process_text_detection(s3_connection, client, bucket, document, file_extensi
     return len(blocks)
 
 def main():
-    session = boto3.Session(profile_name='eric-egalvanic')
+    session = boto3.Session(profile_name='') # modify here
     s3_connection = session.resource('s3')
-    client = session.client('textract', region_name='us-east-1')
-    bucket = 'egalvanic-textract'
-    document = 'image.png'
+    client = session.client('textract', region_name='') # modify here
+    bucket = '' # modify here
+    document = '' # modify here
     filename, file_extension = os.path.splitext(document)
     block_count=process_text_detection(s3_connection,client,bucket,document,file_extension)
     print("Blocks detected: " + str(block_count))
