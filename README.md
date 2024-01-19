@@ -41,3 +41,7 @@ Ensure the AWS CLI is installed on your system. If not, download and install it 
 aws configure
 ```
 Follow the prompts to enter your AWS Access Key ID, Secret Access Key, and default region.
+
+**Modify and run `script.py` to fetch the proper file:**
+
+Modify the variables in `main()` function towards bottom of the script. Change the `profile_name`, `region_name`, `bucket`, and `document` to match your desired S3 object. Run `main()` to process the document.
