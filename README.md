@@ -1,3 +1,5 @@
+Simple application which calls Amazon Textract's document detection API on an image and saves the response as JSON, as well as a copy of the image with the bounding boxes drawn onto it.
+
 To run this application, you need Python and AWS CLI credentials set up. Follow these steps to create a virtual environment and install the necessary packages:
 
 
